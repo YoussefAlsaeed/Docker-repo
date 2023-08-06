@@ -13,7 +13,10 @@ This repository provides a Docker Compose setup for a complete application stack
 - In the `docker-compose.yml` file, replace `DBname` with your own Database name.
 - In the `docker-compose.yml` file, replace `<your-root-password>` with your own MySQL root password.
 
-### 3. Start the Docker Stack
+### 3. Configure topic name
+- In the `logstash.conf` file, replace the `"spring-docker"` with the topic you use in your Spring Boot app.
+
+### 4. Start the Docker Stack
 
 1. Open a terminal and navigate to the root directory of this repository.
 2. Run the following command to start the Docker stack in detached mode:
